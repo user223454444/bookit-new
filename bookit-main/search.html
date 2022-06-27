@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/search.css">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+
+    <header class="header container" id="navigation-menu">
+        <nav class="nav-bar">
+            <a href="#" class="logo"> <img src="image/BOOKSSSIT.png" alt=""> </a>
+
+            <ul class="nav-menu">
+                <li> <a href="index.html" class="nav-link">Home</a> </li>
+                <li> <a href="deals.html" target="_blank" class="nav-link">Deals</a> </li>
+                <li> <a href="about.html" class="nav-link">About</a> </li>
+                <li> <a href="#" class="nav-link">Contact Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section class="container">
+        <article class="search-head">
+            <div class="flex">
+                <h1>Search:</h1>
+                <div><span>72</span>/230 </div>
+            </div>
+            <div class="popular flex">
+                <div><i class="fa-solid fa-map-location"></i>Map View</div>
+                <div>Popularity<i class="fa-solid fa-angle-down"></i></div>
+            </div>
+        </article>
+        <article class="search search-head">
+            <div class="search-left">
+                <form action="">
+                    <input type="text" placeholder=" Moscow" id="text" required onkeypress="return onlyAlphabets(event,this);">
+                    <input type="date" value="fsd" id="startdateId" class="form-control" required>
+                    <input type="number" placeholder=" 2 adults" max="5" min="1">
+                    <div class="flex">
+                        <input type="number" placeholder=" 0 Child" max="5" min="0">
+                        <input type="number" placeholder=" 1 Room" min="1" max="5">
+                    </div>
+                    <div>1 - night stay</div>
+                    <input type="submit" value="Search">
+                </form>
+                <div class="flex-col">
+                    <div class="flex">
+                        <p>Favourites(7)</p>
+                        <span>Tune</span>
+                    </div>
+                    <div class="flex icon">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="flex-col options">
+                        <p>Show private rooms only</p>
+                        <p>€ 50 - 100 (1,837)</p>
+                        <p>Less than 5 km (1043)</p>
+                        <p>Verry good 8+(165)</p>
+                        <p>Hotels (943)</p>
+                        <p>Hostels (109)</p>
+                        <p>Appartements (438)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="search-right">
+                <div class="grid ">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid ">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="grid reveal">
+                    <img src="image/g3.jpg" alt="">
+                    <div class="flex-col">
+                        <div class="flex">
+                            <div class="num">8.9</div>
+                            <div>
+                                <p>Rio de Janeiro Hotel <i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i></p>
+                                <P class="span-hotel"><span>Rio de janeiro, Brazil</span>(2.4 km from center)</P>
+                            </div>
+                        </div>
+                        <div class="standar-room">
+                            <p>Standar Double Room - <i class="fa-solid fa-user-group"></i></p>
+                            <p>Multiple bed types</p>
+                        </div>
+                        <div class="span-search flex">
+                            <span>Breakfast included</span> <span>FREE Cancellation</span> <span>No prepayment
+                                needed</span> <span class="price">50€</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+        <div class="next">
+            <div class="next-previous">
+                <span>Previous</span>
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>...</span>
+                <span>12</span>
+                <span>Next</span>
+            </div>
+        </div>
+        </div>
+        <article class="search-head reveal">
+            <div class="recently-left">
+                <h1>Recently Viewed</h1>
+                <p>Recent searches</p>
+                <p>Favorites</p>
+            </div>
+            <div class="recently-right grid-recent">
+                <div >
+                    <img src="image/g3.jpg" alt="">
+                    <p>HOSHINOYA Fuji Hotel <span>€55/1 night</span></p>
+                    <span>2.4 km from center</span>
+                </div>
+                <div >
+                    <img src="image/g3.jpg" alt="">
+                    <p>HOSHINOYA Fuji Hotel <span>€55/1 night</span></p>
+                    <span>2.4 km from center</span>
+                </div>
+                <div >
+                    <img src="image/g3.jpg" alt="">
+                    <p>HOSHINOYA Fuji Hotel <span>€55/1 night</span></p>
+                    <span>2.4 km from center</span>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <footer>
+        <div class="container1 grid top ">
+            <div class="box ">
+                <h3>Accepted payment methods</h3>
+                <div class="payment grid">
+                    <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+                    <img src="https://img.icons8.com/color/48/000000/visa.png" />
+                    <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+                </div>
+            </div>
+            <div class="box">
+                <h3>For Customers</h3>
+                <ul>
+                    <li>
+                        <a href="about.html" target="_blank">
+                            About Bookit
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact-us.html" target="_blank">
+                            Customer service
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li>47, Bd Moulay Abdallah</li>
+                    <li><i class="far fa-envelope"></i>dev101@gmail.com </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+<!-- javascript for forms validation  -->
+
+
+    <script>
+        //only alphabets:
+        function onlyAlphabets(e) {
+        try {
+            if (window.event) {
+                var charCode = window.event.keyCode;
+            }
+            else if (e) {
+                var charCode = e.which;
+            }
+            else { return true; }
+            if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123))
+                return true;
+            else
+                return false;
+        }
+        catch (err) {
+            alert(err.Description);
+        }
+    }
+    //  today's date 
+    document.getElementById('startdateId').value = new Date().toISOString().slice(0, 10);
+
+    //show only the dates after today's date :
+    var today = new Date().toISOString().split('T')[0];
+    document.getElementById("startdateId").setAttribute('min', today);
+
+//scrolling animation//
+
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++){
+                
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint ){
+                    reveals[i].classList.add('active');
+                }
+                else{
+                    reveals[i].classList.remove('active');
+                }
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

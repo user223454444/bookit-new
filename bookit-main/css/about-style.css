@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+li {
+  list-style: none;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+} 
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  justify-content: flex-end;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul li {
+  margin-left: 3rem;
+}
+
+header ul li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(14, 8, 8);
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #789395;
+}
+
+:root {
+  --text-font: 'Roboto Slab', serif;
+}
+
+.about-head-title h1 {
+  font-family: var(--text-font);
+  font-size: 45px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: .01em;
+  padding: 1rem 0;
+}
+h3{
+  font-size: 1.17em;
+
+}
+
+.about-head-title {
+  background-color: #3970C3;
+  color: #FFF;
+}
+
+
+.who {
+  font-family: var(--text-font);
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.padd{
+  padding: 0 2em ;
+}
+
+.who p {
+  font-family: var(--text-font);
+}
+
+.who-p {
+  font-family: var(--text-font);
+  font-size: 18px;
+}
+
+.intro-card {
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 5px 5px 16px #a8a8a8,
+    -5px -5px 16px #ffffff;
+}
+
+.visit {
+  font-family: var(--text-font);
+  text-decoration: none;
+  background-color: #3970C3;
+  color: #f1f1f1;
+  border-radius: 5px;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+}
+
+.visit a {
+  font-family: var(--text-font);
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 18px;
+}
+
+.button-visit:hover .visit {
+  background-color: #154fa5;
+  transition: 0.5s;
+  color: #f1f1f1;
+}
+
+.button-visit:hover .visit a {
+  color: #fff;
+}
+
+.visit i {
+  display: inline-block;
+  color: #fff;
+  padding-left: 12px;
+}
+
+.who-p-2 {
+  font-family: var(--text-font);
+  font-size: 18px;
+}
+
+.who-p-2 ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 5px;
+}
+
+.list li {
+  list-style: disc !important;
+}
+
+.head {
+  position: relative;
+  text-decoration: none;
+  font-family: var(--text-font);
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.head::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  top: 100%;
+  left: 10%;
+  background: #3970C3;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: center;
+}
+
+.head:hover::after {
+  transform: scaleX(1);
+  transform-origin: center;
+}
+
+/*--------------footer--------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.box {
+  padding: 0px;
+
+}
+
+.container1 {
+  max-width: 80%;
+  margin: auto;
+}
+
+footer {
+  font-family: 'Roboto Slab', serif;
+  padding: 4em;
+}
+
+footer .grid {
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+footer .payment {
+  gap: 1px !important;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer li {
+  margin-bottom: 15px;
+  transition: 0.5s;
+  
+}
+
+ul {
+  padding: 0%;
+}
+
+footer ul li {
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  color: black;
+  margin-left: -30px;
+
+  
+  
+  
+}
+
+#btnScrollToTop{
+  position: fixed;
+  right: 10px;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background:#e62739;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+#btnScrollToTop:active{
+  background: #cc2333;
+
+}
+
+footer li:hover {
+  color: #789395;
+  cursor: pointer;
+}
+
+footer li a {
+  margin-bottom: 15px;
+  transition: 0.5s;
+  text-decoration: none;
+
+}
+
+footer li a {
+  color: #222222;
+}
+
+footer li a:hover {
+  color: #789395;
+  cursor: pointer;
+}
+footer h3{
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+/*--------------footer--------*/
+
+/*--------------animation css----------------*/
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+

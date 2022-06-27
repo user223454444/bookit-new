@@ -1,0 +1,508 @@
+/************************************
+*             Général               *
+************************************/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --blue: #0065FC;
+    --light-blue: #DEEBFF;
+    --grey: #F2F2F2;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    margin: 0;
+    padding: 0px 50px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+h2 {
+    font-size: 120%;
+    ;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*--------------header--------*/
+header {
+    height: 8vh;
+    padding-bottom: 50px;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+.logo img {
+    width: 140px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+
+}
+
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    margin-left: 3rem;
+}
+
+header ul li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+    transition: 0.5s;
+    color: black;
+
+}
+
+header ul li a:hover {
+    color: #3970C3;
+}
+
+@media only screen and (max-width: 768px) {
+    header ul {
+        display: flex;
+
+    }
+}
+
+/************************************
+*         title + search-box        *
+************************************/
+
+h1 {
+    margin-bottom: 0px
+}
+
+.subtitle {
+    display: block;
+    margin: 20px;
+}
+
+.search-box {
+    display: inline-block;
+    border: 1px solid var(--grey);
+    border-radius: 15px;
+    width: auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.search-box .fa-map-marker-alt {
+    display: inline-block;
+    padding: 14px;
+    height: 30px;
+    font-size: 25px;
+    background-color: var(--grey);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search-box input {
+    outline: none;
+    height: 52px;
+    margin-left: -5px;
+    border: none;
+    padding: 10px;
+}
+
+.search-box button {
+    background-color: var(--blue);
+    color: white;
+    height: 52px;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    padding: 17px;
+    cursor: pointer;
+}
+
+.search-box button .fa-search {
+    display: none;
+}
+
+
+/************************************
+*              Filtres              *
+************************************/
+
+.filter {
+    display: flex;
+    align-items: center;
+
+}
+
+.filter .filtre-box{
+    margin: 0px 10px;
+    margin-top: 2em;
+    border-radius: 30px;
+    border: 2px solid var(--grey);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -ms-transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+}
+.filter h2{
+    margin: 0px 10px;
+    margin-top: 1.5em;
+}
+
+.head-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+.head-search h1{
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.filter .filtre-box i {
+    background-color: var(--light-blue);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter .filtre-box:hover {
+    transition: background-color 1s;
+    background-color: var(--light-blue);
+}
+
+.filter .filtre-box .text {
+    padding: 0px 10px;
+}
+
+
+/************************************
+*               Infos               *
+************************************/
+
+.info {
+    display: flex;
+    margin-left: 3em;
+}
+
+.info .fas.fa-info {
+    color: var(--blue);
+    border: 1px solid var(--grey);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+}
+
+
+/************************************
+*           Hébergements            *
+************************************/
+
+.hebergement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hebergement section h2 {
+    margin-top: 0px;
+}
+
+.hebergement section .container {
+    background-color: var(--grey);
+    padding: 20px 20px 10px 20px;
+    border-radius: 20px;
+    height: calc(100% - 120px);
+    box-sizing: content-box;
+}
+
+.hebergement-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hebergement-list a {
+    width: 30%;
+    margin-bottom: 50px;
+}
+
+.hebergement-list a article {
+    background-color: white;
+    padding: 6px;
+    border-radius: 10px;
+    height: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.hebergement-list a article:hover {
+    box-shadow: 5px 5px 5px 0px #E2E2E2;
+}
+
+.hebergement-list a article .fa-star.blue {
+    color: var(--blue);
+}
+
+.hebergement-list a article .fa-star.grey {
+    color: var(--grey);
+}
+
+.hebergement-list a article img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+
+.hebergement-list a {
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-list a article .article-content {
+    padding: 10px 10px 0px 10px;
+}
+
+.hebergement-list a article .article-content h3,
+.hebergement-list a article .article-content p {
+    margin: 6px;
+}
+
+.hebergement-list a article .article-content .price.bold {
+    font-weight: bold;
+}
+
+
+/************************************
+*            Accommodation               *
+************************************/
+
+.hebergement .Accommodation  {
+    width: 75%;
+}
+
+.hebergement .Accommodation  .subtitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+/************************************
+*            Most booked              *
+************************************/
+
+.hebergement .populaire .chart-icone {
+    position: absolute;
+    top: 55px;
+    right: 220px;
+}
+
+.hebergement .populaire {
+    width: 35%;
+    position: relative;
+}
+
+.hebergement .populaire .hebergement-list {
+    flex-direction: column;
+}
+
+.hebergement .populaire .hebergement-list a {
+    width: 100%;
+}
+
+.hebergement .populaire .hebergement-list a article {
+    display: flex;
+    flex-direction: row;
+}
+
+.hebergement .populaire .hebergement-list a article img {
+    border-radius: 10px 0px 0px 10px;
+    width: 35%;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    -ms-border-radius: 10px 0px 0px 10px;
+    -o-border-radius: 10px 0px 0px 10px;
+}
+
+.hebergement .populaire .hebergement-list a article .article-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+/************************************
+*            spaces              *
+************************************/
+
+.spaces {
+    margin-bottom: 30px;
+    
+}
+
+.spaces-list {
+    display: flex;
+    justify-content: space-between;
+    height: 600px;
+}
+
+.spaces-list .column {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.spaces-list .column article img {
+    width: 100%;
+    height: calc(100% - 67px);
+    cursor: pointer;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+}
+
+.spaces-list .column article {
+    height: 100%;
+    box-shadow: 0px 0px 10px 0px #E0E0E0;
+    border-radius: 25px;
+}
+
+.spaces-list .column article h3 {
+    padding: 21px;
+    margin: 0px;
+}
+
+.spaces-list .column.double article {
+    height: 48%;
+}
+
+
+/************************************
+*              Footer               *
+************************************/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 30px;
+}
+
+.box {
+    padding: 0px;
+
+}
+
+.container1 {
+    max-width: 90%;
+    margin: auto;
+}
+
+footer {
+    font-family: 'Roboto Slab', serif;
+    padding: 4em;
+}
+
+footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+footer .payment {
+    gap: 1px !important;
+}
+
+footer h3 {
+    margin-bottom: 20px;
+}
+
+footer li {
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+ul {
+    padding: 0%;
+}
+
+footer ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: 0px;
+    color: black;
+}
+
+footer li:hover {
+    color: #789395;
+    cursor: pointer;
+}
+
+footer li a {
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+footer li a {
+    color: #222222;
+}
+
+footer li a:hover {
+    color: #789395;
+    cursor: pointer;
+}
+footer h3{
+    font-size: 20px;
+  }
+
+/*--------------footer--------*/

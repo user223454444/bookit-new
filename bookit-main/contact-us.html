@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/contact-us.css" />
+  
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="containers">
+      <nav>
+        <ul class="nav-menu">
+          <li> <a href="index.html">Home</a> </li>
+          <li> <a href="deals.html" target="_blank">Deals</a> </li>
+          <li> <a href="about.html" target="_blank">About</a> </li>
+          <li> <a href="contact-us.html" target="_blank">Contact Us</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <span class="big-circle"></span>
+    <img src="image/shape.png" class="square" alt="" />
+    <div class="form">
+      <div class="contact-info">
+        <h3 class="title">We are here for you!</h3>
+        <p class="text">
+          Please provide us a clear message about your request. After carefully analysing your case, we will contact you
+          via e-mail or phone call.</p>
+
+        <div class="info">
+          <div class="information">
+            <i class="fa-solid fa-location-dot"></i>
+            <p> 47, Bd Moulay Abdallah</p>
+          </div>
+          <div class="information">
+            <i class="fa-solid fa-envelope"></i>
+            <p>dev101@gmail.com</p>
+          </div>
+          <div class="information">
+            <i class="fas fa-phone"></i>
+            <p>+212 61 336 3191</p>
+          </div>
+        </div>
+
+        <div class="social-media">
+          <p>Connect with us :</p>
+          <div class="social-icons">
+            <a href="#">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#">
+
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+
+
+        <form action="index.html" autocomplete="off">
+          <h3 class="title">Contact us</h3>
+          <div class="input-container">
+            <input type="text" name="name" class="input" placeholder="UserName" id="contact-name" onkeyup="validateName()" />
+            <span id="name-error"></span>
+
+          </div>
+          <div class="input-container">
+            <input type="email" name="email" class="input" placeholder="Email" id="contact-email" onkeyup="validateEmail()"/>
+            <span id="email-error"></span>
+          </div>
+          <div class="input-container">
+            <input type="tel" name="phone" class="input" placeholder="Phone Number" id="contact-phone"  onkeyup="validatePhone()"/>
+            <span id="phone-error"></span>
+          </div>
+          <div class="input-container textarea">
+            <textarea name="message" class="input" placeholder="Message" id="contact-message" onkeyup="validateMessage()">  </textarea>
+            <span id="message-error"> </span>
+          </div>
+          <input type="submit" value="Send" class="btn" onclick="return validateForm()" />
+          <span id="submit-error"></span>
+        </form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container1 grid top">
+      <div class="box ">
+        <h3>Accepted payment methods</h3>
+        <div class="payment grid">
+          <img src="https://img.icons8.com/color/48/000000/mastercard.png" />
+          <img src="https://img.icons8.com/color/48/000000/visa.png" />
+          <img src="https://img.icons8.com/color-glass/48/000000/paypal.png" />
+        </div>
+      </div>
+      <div class="box">
+        <h3>For Customers</h3>
+        <ul>
+          <li>
+            <a href="about.html" target="_blank">
+              About Bookit
+            </a>
+          </li>
+          <li>
+            <a href="contact-us.html" target="_blank">
+              Customer service
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>47, Bd Moulay Abdallah</li>
+          <li><i class="far fa-envelope"></i>dev101@gmail.com </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+  <script>
+var nameError = document.getElementById("name-error");
+var emailError = document.getElementById("email-error");
+var phoneError = document.getElementById("phone-error");
+var messageError = document.getElementById("message-error");
+var submitError = document.getElementById("submit-error");
+
+function validateName(){
+    var name = document.getElementById("contact-name").value;
+
+    if (name.length == 0){
+        nameError.innerHTML="Name is required";
+        return false;
+    }
+    if(!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)){
+        nameError.innerHTML="Write full name";
+        return false;
+    }
+    nameError.innerHTML= '<i class="fa-solid fa-circle-check"></i>';
+    return true;
+}
+function validatePhone(){
+  var phone = document.getElementById("contact-phone").value;
+  if (phone.length == 0){
+    phoneError.innerHTML="Phone is required";
+        return false;
+    }
+  if(phone.length !== 10){
+    phoneError.innerHTML='Phone should be 10 digits';
+    return false;
+  }
+  if(!phone.match(/^[0-9]{10}$/)){
+    phoneError.innerHTML='Only digits please';
+    return false;
+  }
+  phoneError.innerHTML='<i class="fa-solid fa-circle-check"></i>';
+  return true;
+}
+function validateEmail(){
+  var email = document.getElementById("contact-email").value;
+  if(email.length == 0){
+    emailError.innerHTML='Email is required';
+    return false;
+  }
+  if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)){
+    emailError.innerHTML='Email Invalid'
+    return false;
+  }
+  emailError.innerHTML='<i class="fa-solid fa-circle-check"></i>'
+  return true;
+}
+function validateMessage(){
+  var message = document.getElementById("contact-message").value;
+  var required = 30;
+  var left = required - message.length;
+  if( left > 0){
+    messageError.innerHTML = left+ "  " +'more characters required';
+    return false;
+  }
+    messageError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+  return true;
+}
+function validateForm(){
+  if(!validateName() || !validateEmail() || !validatePhone() || !validateMessage()){
+    submitError.innerHTML='Please fix error to submit';
+    return false;
+
+  }
+}
+  </script>
+</body>
+
+</html>
